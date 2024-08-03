@@ -9,23 +9,16 @@ html {
 }
 
 body {
-	font-family: 'Rubik' ,sans-serif;
+	font-family: "Rubik" ,sans-serif;
 	line-height: 1;
 	font-weight: 400;
 	color: #555;
 }
-.hero-section{
-	background-color: #fdf2e9;
-	padding: 9.6rem 0;
-}
-.hero{
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	align-items: center;
-	gap: 9.6rem;
-	max-width: 130rem;
-	margin: 0 auto;
-}
+
+
+/* ************************* */
+/* General Style*/
+/* ************************* */
 .heading-primary{
 	font-size: 5.2rem;
 	font-weight: 700;
@@ -34,11 +27,7 @@ body {
 	color: #333;
 	margin-bottom: 3.2rem;
 }
-.hero-description{
-	font-size: 2rem;
-	line-height: 1.6;
-	margin-bottom: 4.8rem;
-}
+
 .btn:link,
 .btn:visited{
 	display: inline-block;
@@ -71,13 +60,87 @@ body {
 	 /* Trick to make inside border */
 	 box-shadow: inset 0 0 0 3px #fff;
 }
-.hero-img{
-		width: 100%;
-	}
 
 .mr-sm{
 	margin-right: 1.6rem !important;
 }
+/* ************************* */
+/* Header*/
+/* ************************* */
+.header{
+	background-color: #fdf2e9;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0 4.8rem;
+	height: 9.6rem;
+}
+.logo{
+	height: 2.2rem;
+}
+
+/* ************************* */
+/* Navigation */
+/* ************************* */
+.nav-list{
+	display: flex;
+	gap: 3.2rem;
+	list-style: none;
+	align-items: center;
+}
+
+.nav-link:link,
+.nav-link:visited{
+	color: #333;
+	font-weight: 500;
+	text-decoration: none;
+	font-size: 1.8rem;
+	transition: all 0.3s;
+}
+.nav-link:hover,
+.nav-link:active{
+	color: #cf711f;
+}
+
+.nav-link.cta-link:link,
+.nav-link.cta-link:visited{
+ padding: 1.2rem 2.4rem;
+ border-radius: 9px;
+ background-color: #e67e22;
+ color: #fff;
+}
+.nav-link.cta-link:hover,
+.nav-link.cta-link:active{
+ background-color: #cf711f;
+}
+
+/* ************************* */
+/* Hero Section*/
+/* ************************* */
+
+.hero-section{
+	background-color: #fdf2e9;
+	padding: 4.8rem 0 9.6rem 0;
+}
+.hero{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	align-items: center;
+	gap: 9.6rem;
+	max-width: 130rem;
+	margin: 0 auto;
+	padding: 0 3.2rem;
+}
+
+.hero-description{
+	font-size: 2rem;
+	line-height: 1.6;
+	margin-bottom: 4.8rem;
+}
+
+.hero-img{
+		width: 100%;
+	}
 
 .delivered-box{
 	display: flex;
