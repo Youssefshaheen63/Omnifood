@@ -1,69 +1,3 @@
-* {
-	padding: 0;
-	margin: 0;
-	box-sizing: border-box;
-}
-
-html {
-	font-size: 62.5%;
-}
-
-body {
-	font-family: "Rubik" ,sans-serif;
-	line-height: 1;
-	font-weight: 400;
-	color: #555;
-}
-
-
-/* ************************* */
-/* General Style*/
-/* ************************* */
-.heading-primary{
-	font-size: 5.2rem;
-	font-weight: 700;
-	line-height: 1.05;
-	letter-spacing: -0.5px;
-	color: #333;
-	margin-bottom: 3.2rem;
-}
-
-.btn:link,
-.btn:visited{
-	display: inline-block;
- text-decoration: none;
- padding: 1.6rem 3.2rem;
- font-size: 2rem;
- font-weight: 600;
- border-radius: 9px;
- transition: all 0.3s;
-}
-.btn--full:link,
-.btn--full:visited{
-   background-color: #e67e22 ;
-	 color: #fff;
-}
-.btn--full:hover,
-.btn--full:active{
-   background-color: #cf711f ;
-}
-
-.btn--outline:link,
-.btn--outline:visited{
-   background-color: #fff;
-	 color: #555;
-}
-.btn--outline:hover,
-.btn--outline:active{
-   background-color: #fdf2e9;
-
-	 /* Trick to make inside border */
-	 box-shadow: inset 0 0 0 3px #fff;
-}
-
-.mr-sm{
-	margin-right: 1.6rem !important;
-}
 /* ************************* */
 /* Header*/
 /* ************************* */
@@ -168,4 +102,49 @@ body {
 .delivered-text span{
   color: #cf711f;
 	font-weight: 700;
+}
+
+.how-work{
+	padding:9.6rem 0;
+}
+.step-img-box{
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.step-img-box::before,
+.step-img-box::after{
+	content: " ";
+	position: absolute;
+	display: block;
+	border-radius: 50%;
+
+}
+.step-img-box::before{
+	width: 60%;
+	padding-bottom: 60%;
+	background-color: #fdf2e9;
+	z-index: -2;
+}
+.step-img-box::after{
+	width: 45%;
+	padding-bottom: 45%;
+	background-color: #fae5d3;
+	z-index: -1;
+}
+.step-img{
+	width: 35%;
+}
+
+.step-num{
+	font-size: 8.6rem;
+	font-weight: 600;
+	color: #ddd;
+	margin-bottom: 1.2rem;
+}
+.step-description{
+  font-size: 1.7rem;
+	line-height: 1.8;
+  color: #555;
 }
