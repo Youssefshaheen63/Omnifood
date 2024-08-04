@@ -2,6 +2,7 @@
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
+	list-style: none;
 }
 
 html {
@@ -115,4 +116,30 @@ body {
 
 .mr-sm{
 	margin-right: 1.6rem !important;
+}
+
+.mb-md{
+	margin-bottom: 4.8rem;
+}
+.center-text{
+	text-align: center;
+}
+strong{
+	font-weight: 500;
+}
+
+.link:link,
+.link:visited{
+	display: inline-block;
+	color: #e67e22;
+	padding-bottom: 0.2rem;
+	text-decoration: none;
+	border-bottom: 1px solid currentColor;
+	transition: all 0.3s;
+}
+
+.link:hover,
+.link:active{
+	color: #cf711f;
+	border-bottom: 1px solid transparent;
 }
