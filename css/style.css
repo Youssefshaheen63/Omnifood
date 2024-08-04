@@ -104,6 +104,40 @@
 	font-weight: 700;
 }
 
+
+
+
+/* ************************* */
+/*  Featured in Section*/
+/* ************************* */
+
+.section-featured{
+	padding: 4.8rem 0 3.2rem 0;
+}
+.heading-featuredin{
+	font-size: 1.4rem;
+	font-weight: 500;
+	text-transform: uppercase;
+	text-align: center;
+	color: #888;
+	margin-bottom: 2.4rem;
+	letter-spacing: 0.75px;
+}
+.logos{
+  display: flex;
+	justify-content: space-around;
+}
+
+.logos img{
+	height: 3.2rem;
+	filter: brightness(0);
+	opacity: 50%;
+}
+
+
+/* ************************* */
+/*  How to work  Section*/
+/* ************************* */
 .how-work{
 	padding:9.6rem 0;
 }
