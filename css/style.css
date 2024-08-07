@@ -256,22 +256,6 @@
 	height: 2.4rem;
 }
 
-.list-items{
-	font-size: 1.8rem;
-	display: flex;
-	flex-direction: column;
-	gap: 1.6rem;
-}
-.list-item{
-	display: flex;
-	align-items: center;
-	gap: 1.6rem;
-}
-.item-icon{
-	font-size: 3rem;
-	color: #e67e22;
-}
-
 .all-recipes{
 	text-align: center;
 	font-size: 1.8rem;
@@ -331,4 +315,104 @@
 }
 .gallery-item img:hover{
 	transform: scale(1.1);
+}
+
+
+/* ************************* */
+/* Pricing Section  */
+/* ************************* */
+.pricing-section{
+	padding:9.6rem 0;
+}
+
+.pricing-plan{
+	border-radius: 11px;
+	width: 75%;
+}
+.starter{
+	justify-self: end;
+	border: 2px solid #fdf2e9;
+
+	/* Two px add take its value from padding so the buttom move to top 2px
+	 to solve that make padding smaller than complete box */
+	 padding: 4.6rem;
+}
+.complete{
+	background-color: #fdf2e9;
+	padding: 4.8rem;
+	position: relative;
+	overflow: hidden;
+}
+
+.complete::after{
+	content: 'Best value';
+	position: absolute;
+    top: 6%;
+    right: -18%;
+	background-color: #ffd43b;
+	color: #333;
+	font-size: 1.4rem;
+	font-weight: 700;
+	text-transform: uppercase;
+	padding: 0.8rem 8rem;
+	transform: rotate(45deg);
+}
+.plan-header{
+	text-align: center;
+	margin-bottom: 4.8rem;
+}
+.plan-name{
+	font-size: 2rem;
+	font-weight: 600;
+    letter-spacing: 0.75px;
+	color: #cf711f;
+	text-transform: uppercase;
+	margin-bottom: 3.2rem;
+}
+.plan-price{
+	font-size: 6.2rem;
+	font-weight: 600;
+	color: #333;
+	margin-bottom: 1.6rem;
+}
+.plan-price span{
+	font-size: 3rem;
+	font-weight: 500;
+	margin-right: 0.8rem;
+}
+.plan-text{
+	font-size: 1.6rem;
+	line-height: 1.6rem;
+	color: #6f6f6f;
+}
+
+.plan-sign-up{
+	text-align: center;
+	margin-top: 4.8rem;
+}
+
+.plan-details{
+   font-size: 1.6rem;
+   line-height: 1.6;
+   text-align: center;
+}
+
+
+.feature-icon{
+	color: #e67e22;
+	font-size: 3.2rem;
+	margin-bottom: 3.2rem;
+	background-color: #fdf2e9;
+    padding: 1.6rem;
+	border-radius: 50%;
+}
+.feature-title{
+	font-size: 2.4rem;
+	font-weight: 700;
+	color: #333;
+	margin-bottom: 1.6rem;
+}
+.feature-text{
+	font-size: 1.6rem;
+	line-height: 1.8;
 }
