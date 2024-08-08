@@ -4,6 +4,12 @@
 	box-sizing: border-box;
 	list-style: none;
 }
+*:focus{
+	/* this bad for accessibility dont use outline with none
+	 use other style replace it */
+	outline: none;
+	box-shadow: 0 0 0 0.8rem rgb(230, 126, 34 , 0.5);
+}
 
 html {
 	font-size: 62.5%;
@@ -89,7 +95,7 @@ body {
 }
 
 
-
+.btn,
 .btn:link,
 .btn:visited{
 	display: inline-block;
@@ -99,6 +105,10 @@ body {
  font-weight: 600;
  border-radius: 9px;
  transition: all 0.3s;
+
+ cursor: pointer;
+ border: none;
+ font-family: inherit;
 }
 .btn--full:link,
 .btn--full:visited{
@@ -136,6 +146,17 @@ body {
 .link:active{
 	color: #cf711f;
 	border-bottom: 1px solid transparent;
+}
+
+.btn-form{
+	background-color: #45260a;
+	color: #fdf2e9;
+	align-self: end;
+	padding: 1.2rem;
+}
+.btn-form:hover{
+	background-color: #fff;
+	color: #555;
 }
 .list-items{
 	display: flex;
